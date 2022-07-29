@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "copy_url",
+  "version": "1.0",
+  "description": "Click icon,pasted url in clipboard.",
+
+  "page_action": {
+    "default_icon": "icons/c_16.svg",
+    "default_title": "copy_url"
+  },
+  
+  "background":{
+    "scripts":[
+      "background.js"
+    ]
+  }
+}
+
