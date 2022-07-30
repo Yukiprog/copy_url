@@ -3,16 +3,23 @@
   "name": "copy_url",
   "version": "1.0",
   "description": "Click icon,pasted url in clipboard.",
+  "icons": {
+    "48": "icons/c-48.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
 
   "page_action": {
-    "default_icon": "icons/c_16.svg",
-    "default_title": "copy_url"
+    "default_icon": "icons/c_48.png",
+    "default_title": "Copy!",
+    "show_matches": ["*://*/*"]
   },
-  
-  "background":{
-    "scripts":[
-      "background.js"
-    ]
-  }
-}
 
+  "background": {
+    "scripts": ["background.js"]
+  }
+
+}
