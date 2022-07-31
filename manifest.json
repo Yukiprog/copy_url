@@ -2,18 +2,18 @@
   "manifest_version": 2,
   "name": "copy_url",
   "version": "1.0",
-  "description": "Click icon,pasted url in clipboard.",
+  "description": "Click icon to paste URL to clipboard",
   "icons": {
-    "48": "icons/c-48.png"
+    "48": "icons/c_48.png"
   },
 
   "permissions": [
-    "activeTab",
-    "tabs"
+    "tabs",
+    "clipboardWrite"
   ],
 
   "page_action": {
-    "default_icon": "icons/c_48.png",
+    "default_icon": "icons/c_32.png",
     "default_title": "Copy!",
     "show_matches": ["*://*/*"]
   },
@@ -21,5 +21,5 @@
   "background": {
     "scripts": ["background.js"]
   }
-
+  
 }
